@@ -105,20 +105,18 @@
     margin: 20px
 
     margin-bottom: 20px;
-    
     /* margin-left: 100px */
 }
 
 .hero{
     flex-direction: column;
     justify-content: center;
-    height: 2000px;
-} 
-.from-box { 
-    padding: 14px;
-    margin: 2px 0px; 
-    margin-bottom: 20px;
-    
-    margin-left: 150px
 }
 
+.from-box { 
+    padding: 14px;
+    margin: 20px
+
+    margin-bottom: 20px;
+    /* margin-left: 100px */
+}

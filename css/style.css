@@ -30,7 +30,7 @@ html{
     height: 100%;
     width:100%;
     z-index: -1;
-    opacity: 0.7;
+    /* opacity: 0.7; */
 }
 
 /* Navigation Bar: Logo and Image */
@@ -46,6 +46,7 @@ html{
 
 .search-form
 {
+
     /* margin-top:25px ; */
     float: right ;
     margin-right: 10px;
@@ -53,6 +54,7 @@ html{
 }
 
 .search-form input{
+
     padding: 7px;
     border:none;
     font-size: 16px;
@@ -102,8 +104,9 @@ html{
 
 .menu-bar
 {
-    background:black;
+    background:rgb(71, 10, 10);
     text-align: center;
+    
 }
 .menu-bar ul
 {
@@ -114,7 +117,7 @@ html{
 .menu-bar ul li
 {
     widows: 120px;
-    margin: 15px;
+    margin: 10px;
     padding:15px ;
 }
 .menu-bar ul li a
@@ -180,13 +183,14 @@ html{
     left:0px;
     width: 100%;
     z-index: -1;
-    opacity:0.89;
+    opacity:0.77;
 }
 
 #home h1{
-    color:white;
+    color:black;
     text-align: center;
     font-family: 'Bree Serif', serif;
+    /* margin-top: 20px; */
 }
 
 #home p{
@@ -201,7 +205,8 @@ html{
     display: flex;
 }
 #services .box{ 
-    border: 2px solid brown;
+    /* border: 2px solid brown; */
+    box-shadow: 3px 3px rgb(171, 241, 6);
     padding: 34px;
     margin: 2px 55px;
     border-radius: 28px;
@@ -226,6 +231,8 @@ html{
 /* Contact Section */
 #contact{
     position: relative;
+    background-color:  #313535;
+    color: aliceblue;
 }
 #contact::before{
     content: "";
@@ -233,8 +240,10 @@ html{
     width: 100%;
     height: 100%;
     z-index: -1;
-    opacity: 0.7;
-    background: url('../bg1.jpg') no-repeat center center/cover;
+    opacity: 0.5;
+    background-color:#313535;
+    color: aliceblue;
+    /* background: url('../bg1.jpg') no-repeat center center/cover; */
 
 }
 #contact-box{
@@ -271,16 +280,20 @@ footer{
 /* Utility Classes */
 .h-primary{
     font-family: 'Bree Serif', serif;
-    font-size: 3.8rem;
+    font-size: 2.8rem;
     padding: 12px;
 }
 
 .h-secondary{
     font-family: 'Bree Serif', serif;
-    font-size: 2.3rem;
+    font-size: 2rem;
     padding: 12px;
 }
-
+.h-third{
+    font-family: 'Bree Serif', serif;
+    font-size: 1.5rem;
+    padding: 12px;
+} 
 .btn{
     padding: 6px 20px;
     border: 2px solid white;
@@ -307,13 +320,16 @@ footer{
 #services11 .box11{ 
     width: 225px;
     height: 240px;
-    border: 2px solid brown;
+    /* border: 2px solid brown; */
     /* padding: 34px; */
     /* margin: 2px 55px; */
     /* border-radius: 28px; */
     background: #f2f2f2;
     margin-bottom: 20px;
   margin-left: 10px;
+  margin-right: 1px;
+  box-shadow: 3px 3px rgb(171, 241, 6);
+  /* box-shadow: -3px -3px rgb(171, 241, 6); */
 }
 
 #services11 .box11 img{ 
@@ -323,8 +339,128 @@ footer{
    display: block;
 }
 
+#services11 .box11:hover{
+    background-color: #ebd2d2;
+
+
+    height: 245px;
+    width: 230px;
+    border-radius: 10px;
+    font-size: 24px;
+    color: black;
+
+}
 #services11 .box11 p{
     font-family: 'Bree Serif', serif;
 
 } 
+
+
+/* sliding images */
+
+body
+{
+    margin: 0 auto;
+    width: 100%;
+}
+
+.slider
+{
+    overflow: hidden;
+    height: 400px;
+
+}
+
+.slider figure div
+{
+    float: left;
+    width: 20%;
+}
+
+.slider figure img
+{
+    width: 100%;
+    float: left;
+}
+
+.slider figure
+{
+    position: relative;
+    width: 500%;
+    margin: 0px;
+    left: 0;
+    animation: 20s pravin infinite;
+
+}
+
+@keyframes pravin{
+/* 0% {
+     left: 0%;
+}
+
+10% {
+     left: -100%;
+}
+
+10% {
+     left: -100%;
+} */
+/* 
+12% {
+     left: -200%;
+} */
+
+22% {
+     left: -300%;
+}
+
+24% {
+     left: -300%;
+}
+
+34% {
+    left: -400%;
+}
+
+36% {
+    left: -300%;
+}
+
+46% {
+    left: -300%;
+}
+
+48% {
+    left: -400%;
+}
+
+58% {
+    left: -400%;
+}
+ 
+60%{
+    left: -300%;
+}
+
+70%{
+    left: -300%;
+
+}
+
+72%{
+    left: -200%;
+
+}
+/* 
+82%{
+    left: -200%;
+}
+
+84%{
+    left: -100%;
+} */
+
+/* 96%{
+    left: 0%;
+} */
 
