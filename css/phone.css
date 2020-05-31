@@ -8,6 +8,16 @@
     padding: 0px 7px;
     padding-bottom: 8px;
 }
+
+#menubar2 {
+    flex-direction: column;
+}
+
+#menubar2 ul li a{
+    font-size: 1rem;
+    padding: 0px 7px;
+    padding-bottom: 8px;
+}
 /* Home section */
 #home{
     height: 370px; 
@@ -57,4 +67,18 @@
 .btn{
     font-size: 13px;
     padding: 4px 8px;
+}
+
+
+
+
+/* Services section  */
+#services11{
+    flex-direction: column;
+}
+
+#services11 .box11 { 
+    padding: 14px;
+    margin: 2px 0px; 
+    margin-bottom: 20px;
 }
